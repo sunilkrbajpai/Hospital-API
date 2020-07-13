@@ -38,9 +38,9 @@ There can be 2 types of ​ Users
 6) **/reports/:status** → To Show all the reports in the database with a particular status lets say *Positive* or *Negative* Or *Quarantined* etc.
 
 # What's in the folders?
-**Entry point** : index.js.
-**config** : Contains configuration files of Mongoose and Passport JWT Strategies.
-**Controllers** : The controllers for various urls like Doctor API or Patient API or Report API.
-**Models** : Mongoose Models for the Doctors, Patients and reports!
-**routes** : Different routes for different request urls.
-**views** : Not have any view for this project.
+- **Entry point** : index.js.
+- **config** : Contains configuration files of Mongoose and Passport JWT Strategies.
+- **Controllers** : The controllers for various urls like Doctor API or Patient API or Report API.
+- **Models** : Mongoose Models for the Doctors, Patients and reports!
+- **routes** : Different routes for different request urls.
+- **views** : Not have any view for this project.
