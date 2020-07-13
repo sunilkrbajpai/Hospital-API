@@ -40,7 +40,7 @@ There can be 2 types of ​ Users
 # What's in the folders?
 - **Entry point** : index.js.
 - **config** : Contains configuration files of Mongoose and Passport JWT Strategies.
-- **Controllers** : The controllers for various urls like Doctor API or Patient API or Report API.
-- **Models** : Mongoose Models for the Doctors, Patients and reports!
+- **controllers** : The controllers for various urls like Doctor API or Patient API or Report API.
+- **models** : Mongoose Models for the Doctors, Patients and reports!
 - **routes** : Different routes for different request urls.
 - **views** : Not have any view for this project.
