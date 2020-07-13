@@ -22,7 +22,7 @@ There can be 2 types of ​ Users
 1. Clone the Package to your local System
 2. Navigate to the folder wherein the project has been cloned
 3. Open Terminal and type `npm install` [Make sure node is already installed in your system!]
-4. Type ` node index.js` || `node start`
+4. Type ` node index.js` || `npm start`
 5. Open browser and goto `localhost:8000`
 
 # What are the Different API's in this project?
