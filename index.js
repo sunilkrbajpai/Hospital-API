@@ -6,7 +6,7 @@ const PORT=8000;
 const db=require('./config/mongoose');
 
 
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended:true}));
 
 //use express router
 app.use('/',require('./routes'));

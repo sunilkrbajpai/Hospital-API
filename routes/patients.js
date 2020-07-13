@@ -1,9 +1,10 @@
 const express=require('express');
 const router=express.Router();
+const passport=require('passport');
 const patients_controller=require('../controllers/patients_controller');
 
-router.get('/register',patients_controller.register);
-router.get('/create_report',patients_controller.createReport);
-router.get('/all_report',patients_controller.allReports);
+router.post('/register',passport.authenticate('jwt',{session:false}),patients_controller.register);
+router.post('/:id/create_report',passport.authenticate('jwt',{session:false}),patients_controller.createReport);
+router.post('/:id/all_report',patients_controller.allReports);
 
 module.exports=router;

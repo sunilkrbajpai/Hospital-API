@@ -1,7 +1,7 @@
 const mongoose=require('mongoose');         //require mongoose
-const dSchema=new mongoose.Schema({
-    email:{                                   //store email
-        type:String,
+const pSchema=new mongoose.Schema({
+    phone:{                                   //store phone
+        type:Number,
         required:true,
         unique:true
     },
@@ -12,6 +12,11 @@ const dSchema=new mongoose.Schema({
     name:{                                      //store name
         type:String,
         required:true
+    },
+    registerBy:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'Doctor',
+        required:true
     }
 },
 {
@@ -19,5 +24,5 @@ const dSchema=new mongoose.Schema({
 });
 
 // exports user
-const Doctor=mongoose.model('Doctor',dSchema);
-module.exports=Doctor;
+const Patient=mongoose.model('Patient',pSchema);
+module.exports=Patient;
