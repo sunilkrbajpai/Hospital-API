@@ -4,8 +4,7 @@ We’re going to design an API using Node.js and MongoDB for the doctors of a Ho
 
 ## Task:
 There can be 2 types of ​ Users
-- *Doctors*
-- *Patients*
+- *Doctors* & *Patients*
 
 - Doctors can log in
 
@@ -22,16 +21,16 @@ There can be 2 types of ​ Users
 
 1. Clone the Package to your local System
 2. Navigate to the folder wherein the project has been cloned
-3. Open Terminal and type npm install [Make sure node is already installed in your system!]
-4. Type > node index.js || node start
-5. Open browser and goto localhost:8000
+3. Open Terminal and type `npm install` [Make sure node is already installed in your system!]
+4. Type ` node index.js` || `node start`
+5. Open browser and goto `localhost:8000`
 
 # What are the Different API's in this project?
-1) **/doctors/register** → Registers a new Doctor to the hospital Database. Takes in mandatory field:--> **email**,**name** and **password**
+1) **/doctors/register** → Registers a new Doctor to the hospital Database. Takes in mandatory field:--> **email**, **name** and **password**
 2) **/doctors/login** → Doctor Login. if Authenticated, Returns the JSON Web token, takes in mandatory **email** and **password**
 
 ### Protected routes
-3) **/patients/register** → API to register a new Patient. Only authorized doctor can create a new Patient. Takes some mandatory information :--> **phone**,**name**,**password**
+3) **/patients/register** → API to register a new Patient. Only authorized doctor can create a new Patient. Takes some mandatory information :--> **phone**, **name**, **password**
 4) **/patients/:id/create_report** → API to create a report for the Patient with ID. Need **Status** to get passed in body.
 
 ### Unprotected routes
