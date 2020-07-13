@@ -25,7 +25,7 @@ There can be 2 types of ​ Users
 4. Type ` node index.js` || `npm start`
 5. Open browser and goto `localhost:8000`
 
-# What are the Different API's in this project?
+# Different API's in this project:
 1) **/doctors/register** → Registers a new Doctor to the hospital Database. Takes in mandatory field:--> **email**, **name** and **password**
 2) **/doctors/login** → Doctor Login. if Authenticated, Returns the JSON Web token, takes in mandatory **email** and **password**
 
@@ -37,7 +37,7 @@ There can be 2 types of ​ Users
 5) **/patients/:id/all_reports** → To Show all the reports of a particular Patient with *id*.
 6) **/reports/:status** → To Show all the reports in the database with a particular status lets say *Positive* or *Negative* Or *Quarantined* etc.
 
-# What's in the folders?
+# Folder Structure
 - **Entry point** : index.js.
 - **config** : Contains configuration files of Mongoose and Passport JWT Strategies.
 - **controllers** : The controllers for various urls like Doctor API or Patient API or Report API.
