@@ -1,14 +1,14 @@
 const mongoose=require('mongoose');         //require mongoose
 const rSchema=new mongoose.Schema({
-    status:{                                   //store phone
+    status:{                                   //store status
         type:String,
         required:true,
     },
-    doctor:{                                  //store password
+    doctor:{                                  //store doctor id
         type:mongoose.Schema.Types.ObjectId,
         ref:'Doctor'
     },
-    patient:{                                      //store name
+    patient:{                                      //store patuent id
         type:mongoose.Schema.Types.ObjectId,
         ref:'Patient'
     }

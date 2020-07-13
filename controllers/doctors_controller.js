@@ -1,6 +1,7 @@
-const Doct=require('../models/doctor');
-const jwt=require('jsonwebtoken');
+const Doct=require('../models/doctor');         //import model
+const jwt=require('jsonwebtoken');              //import jsonwebtoken
 
+//function for register doctor
 module.exports.register= function(req,res){
 
     Doct.findOne({email:req.body.email},function(err,user){
@@ -31,19 +32,21 @@ module.exports.register= function(req,res){
 
 }
 
+
+//func for login as doctor
 module.exports.login=async function(req,res){
 
     try{
         let doctor=await Doct.findOne({email:req.body.email});
 
-        if(!doctor || doctor.password!=req.body.password)
+        if(!doctor || doctor.password!=req.body.password)           //when invalid credentials
         {
             return res.json(422,{
                 message:'Invalid credentials'
             })
         }
 
-        return res.json(200,{
+        return res.json(200,{                                           //return  token to user
             message:'Sign in successsful',
             data:{
             token:jwt.sign(doctor.toJSON(),'IAmAVeryComplicatedSecretKey',{expiresIn:'2h'})

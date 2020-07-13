@@ -1,5 +1,6 @@
-const Report=require('../models/report');
+const Report=require('../models/report');     //import model
   
+//func to fetch reports using status
   module.exports.fetchReports = async function (req, res) {
     try{
       let report=await Report.find({ status:req.params.status }).populate('doctor').populate('patient');

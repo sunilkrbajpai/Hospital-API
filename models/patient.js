@@ -13,7 +13,7 @@ const pSchema=new mongoose.Schema({
         type:String,
         required:true
     },
-    registerBy:{
+    registerBy:{                                   //store doctor id
         type:mongoose.Schema.Types.ObjectId,
         ref:'Doctor',
         required:true
