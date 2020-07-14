@@ -41,13 +41,23 @@ There can be 2 types of ​ Users
 <img src="https://user-images.githubusercontent.com/25504941/87380547-52a9d800-c5b0-11ea-9c03-593b4fda9cf1.png" width=800 height=500/>
 
 **Apply Bearer token in header**
-<img src="https://user-images.githubusercontent.com/25504941/87380544-52114180-c5b0-11ea-94c4-179e7c16c352.png" width=800 height=500/>
+<img src="https://user-images.githubusercontent.com/25504941/87380544-52114180-c5b0-11ea-94c4-179e7c16c352.png" width=500 height=500/>
 
 4) **/patients/:id/create_report** → API to create a report for the Patient with ID. Need **Status** to get passed in body.
 
+<img src="https://user-images.githubusercontent.com/25504941/87380548-53426e80-c5b0-11ea-9479-a9013fc6d3e3.png" width=800 height=500/>
+
+**Here also need to pass bearer token in header**
+
 ### Unprotected routes
 5) **/patients/:id/all_reports** → To Show all the reports of a particular Patient with *id*.
+
+<img src="https://user-images.githubusercontent.com/25504941/87380550-53db0500-c5b0-11ea-9465-553e93499347.png" width=800 height=500/>
+
+
 6) **/reports/:status** → To Show all the reports in the database with a particular status lets say *Positive* or *Negative* Or *Quarantined* etc.
+
+<img src="https://user-images.githubusercontent.com/25504941/87380553-550c3200-c5b0-11ea-9f7f-9f07254bfb83.png" width=800 height=500/>
 
 # Folder Structure
 - **Entry point** : index.js.
