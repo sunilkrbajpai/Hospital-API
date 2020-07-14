@@ -25,7 +25,7 @@ There can be 2 types of ​ Users
 4. Type ` node index.js` || `npm start`
 5. Open browser and goto `localhost:8000`
 
-# Different API's in this project:
+# Different API's in this project and its working:
 1) **/doctors/register** → Registers a new Doctor to the hospital Database. Takes in mandatory field:--> **email**, **name** and **password**
 
 <img src="https://user-images.githubusercontent.com/25504941/87380540-4f165100-c5b0-11ea-87a7-5f40a024e663.png" width=800 height=500/>
@@ -41,7 +41,7 @@ There can be 2 types of ​ Users
 <img src="https://user-images.githubusercontent.com/25504941/87380547-52a9d800-c5b0-11ea-9c03-593b4fda9cf1.png" width=800 height=500/>
 
 **Apply Bearer token in header**
-<img src="https://user-images.githubusercontent.com/25504941/87380544-52114180-c5b0-11ea-94c4-179e7c16c352.png" width=500 height=500/>
+<img src="https://user-images.githubusercontent.com/25504941/87380544-52114180-c5b0-11ea-94c4-179e7c16c352.png" width=500 height=300/>
 
 4) **/patients/:id/create_report** → API to create a report for the Patient with ID. Need **Status** to get passed in body.
 
