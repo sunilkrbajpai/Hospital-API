@@ -42,7 +42,7 @@ There can be 2 types of ​ Users
 
 **Apply Bearer token in header**
 
-<img src="https://user-images.githubusercontent.com/25504941/87380544-52114180-c5b0-11ea-94c4-179e7c16c352.png" width=500 height=300/>
+<img src="https://user-images.githubusercontent.com/25504941/87380544-52114180-c5b0-11ea-94c4-179e7c16c352.png" width=650 height=300/>
 
 4) **/patients/:id/create_report** → API to create a report for the Patient with ID. Need **Status** to get passed in body.
 
