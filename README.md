@@ -67,3 +67,7 @@ There can be 2 types of ​ Users
 - **models** : Mongoose Models for the Doctors, Patients and reports!
 - **routes** : Different routes for different request urls.
 - **views** : Not have any view for this project.
+
+# Full working Explained
+
+<a href="https://drive.google.com/file/d/1Kf5mq-3kGS2ZYADiPdjJDSz9lxibqqoQ/view?usp=sharing">Video</a>
