@@ -28,8 +28,12 @@ There can be 2 types of ​ Users
 # Different API's in this project:
 1) **/doctors/register** → Registers a new Doctor to the hospital Database. Takes in mandatory field:--> **email**, **name** and **password**
 
-<img src="https://user-images.githubusercontent.com/25504941/87380540-4f165100-c5b0-11ea-87a7-5f40a024e663.png" width=700 height=400>
+<img src="https://user-images.githubusercontent.com/25504941/87380540-4f165100-c5b0-11ea-87a7-5f40a024e663.png" width=700 height=400/>
+
 2) **/doctors/login** → Doctor Login. if Authenticated, Returns the JSON Web token, takes in mandatory **email** and **password**
+
+<img src="https://user-images.githubusercontent.com/25504941/87380542-50e01480-c5b0-11ea-802b-80c152b4c252.png" width=700 height=400/>
+
 
 ### Protected routes
 3) **/patients/register** → API to register a new Patient. Only authorized doctor can create a new Patient. Takes some mandatory information :--> **phone**, **name**, **password**
